@@ -44,7 +44,6 @@ module.exports = {
         db.query(sql, (error, datas) => {
             if (error) throw error;
             if (datas.length > 0) return callback(datas);
-            console.log(num_random);
             return callback(null);
         });
     },
